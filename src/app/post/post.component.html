@@ -1,0 +1,17 @@
+<div class="list-group-item  flex-column align-items-start">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{post.title}}</h5>
+    <small>{{post.date}}</small>
+  </div>
+  <small>{{post.category}}</small>
+  <p class="mb-1">{{post.write}}</p>
+
+  <div class="row justify-content-md-center">
+    <div class="col col-md-12">
+      <button (click)="onDelete()" type="button" class="btn btn-danger btn-sm">Delete</button>
+
+    </div>
+
+  </div>
+
+</div>

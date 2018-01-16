@@ -1,0 +1,28 @@
+<div class="form-group">
+  <h1>BlogAPI</h1>
+  <label for="post-title">Title</label>
+  <input type="text"
+         class="form-control"
+         id="post-title"
+         [(ngModel)]="postTitle"
+         placeholder="Title...">
+</div>
+<div class="form-group">
+  <label for="post-category">Categories</label>
+  <input type="text"
+         class="form-control"
+         id="post-category"
+         [(ngModel)]="postCategory"
+         placeholder="Categories...">
+</div>
+<div class="form-group">
+  <label for="post-write">Post Content</label>
+  <input type="text"
+         class="form-control"
+         id="post-write"
+         [(ngModel)]="postWrite"
+         placeholder="Post content...">
+</div>
+
+<button type="button" (click)="onAdd()" class="btn btn-outline-primary">Submit</button>
+

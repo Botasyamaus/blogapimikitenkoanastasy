@@ -1,0 +1,12 @@
+<div class="container">
+<app-posts-form
+(addPost)="onAdd($event)"
+></app-posts-form>
+  <div class="list-group mt-4">
+    <app-post
+      (deletePost)="onDelete($event)"
+      [post]="p"
+    *ngFor="let p of posts"
+    ></app-post>
+</div>
+</div>
